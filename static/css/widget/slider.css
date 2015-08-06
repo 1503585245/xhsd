@@ -1,0 +1,26 @@
+.slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.slider .slider-list {
+  position: absolute;
+  height: 100%;
+}
+.slider .slider-list .slider-item {
+  float: left;
+}
+.slider .slider-btn-box {
+  position: absolute;
+  text-align: center;
+  z-index: 10;
+}
+.slider .slider-prev {
+  position: absolute;
+  left: 0;
+}
+.slider .slider-next {
+  position: absolute;
+  right: 0;
+}

@@ -1,0 +1,15 @@
+﻿translate(s)
+  transition s
+  -moz-transition s
+  -webkit-transition s
+  -o-transition s
+
+border-radius(s)
+  -moz-border-radius s
+  -webkit-border-radius s
+  border-radius s
+
+opacity(s)
+  opacity s
+  -moz-opacity s
+  filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(s * 100) + ')')
