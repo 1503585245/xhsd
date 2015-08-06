@@ -98,7 +98,6 @@
       }
 
       el.sliderBtn.on('click',function(){
-        console.log(index);
         var i = $(this).index();
         animate((index-i)*el.width);
       });
