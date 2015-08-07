@@ -29,7 +29,8 @@
         _display inline
         max-width img-width
         max-height img-width
-
+        _width unquote('expression(this.offsetWidth < "160" ? "auto" : "160px");')
+        _height unquote('expression(this.offsetHeight < "160" ? "auto" : "160px");')
     h4
       padding 0 20px
       width 120px
@@ -92,6 +93,7 @@
     width 200px
     padding 0 11px
     li
+      margin 0;
       position relative
       height 45px
       width 100%
@@ -322,6 +324,7 @@
         width 200px
         padding 0 11px
         li
+          margin 0;
           &.active
             p
               translate(all 1s)
@@ -345,6 +348,7 @@
       width 200px
       padding 0 11px
       li
+        margin 0;
         width 200px
         position relative
         height 45px
@@ -404,7 +408,7 @@
             height 38px
             left 0
             position absolute
-            background-color red
+            background unquote('url(/static/img/icon/'+season+'-count-icon.png)') 4px 4px no-repeat
 
     h5
       margin 20px 15px 0
@@ -418,6 +422,7 @@
       width 200px
       padding 0 11px
       li
+        margin 0;
         &.active
           p
             translate(all 1s)
@@ -438,6 +443,7 @@
     .tab-control
       margin-right -2px
       li
+        position relative
         float left
         height 149px
         width 149px
@@ -447,9 +453,52 @@
         cursor pointer
         &.first-item
           border-left none
+          i
+            background-position -3px -3px
+        &.second-item
+          i
+            background-position -63px -3px
+        &.third-item
+          i
+            background-position -123px -3px
+        &.forth-item
+          i
+            background-position -183px -3px
+        &.fifth-item
+          i
+            background-position -243px -3px
+        &.sixth-item
+          i
+            background-position -303px -3px
+        &.seventh-item
+          i
+            background-position -363px -3px
+        &.eighth-item
+          i
+            background-position -423px -3px
         &.active
           border-bottom 1px solid #FFF
           background-color #FFF
+        i
+          position absolute
+          width 54px
+          height 54px
+          display block
+          top 20px
+          left 47px
+          background url(/static/img/cbs-list.png) no-repeat
+        h3
+          padding-top 75px
+          height 30px
+          line-height 30px
+          text-align center
+          font-size 12px
+          color #000
+          text-indent 0
+          border none
+          &:first-letter
+            font-size 12px
+            color #000
     .tab-item
       display none
       width 1200px

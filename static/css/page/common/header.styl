@@ -7,18 +7,66 @@
       color a-color
       &:first-child
         color #000
-    .msg,.cart
+    .order,.msg,.cart,.help
+      position relative
+      font-size 12px
       padding-left 20px
+    .order,.msg,.cart,.help
+      i
+        display block
+        position absolute
+        width 18px
+        height 18px
+        left 0
+        top -1px
+        background unquote('url(/static/img/icon/'+season+'-topbar-icons.png)') no-repeat
+    .order
+      i
+        background-position -6px -6px
+      &:hover
+        i
+          background-position -6px -36px
+    .msg
+      i
+        background-position -36px -6px
+      &:hover
+        i
+          background-position -36px -36px
+    .cart
+      i
+        background-position -66px -6px
+      &:hover
+        i
+          background-position -66px -36px
+    .help
+      i
+        background-position -96px -6px
+      &:hover
+        i
+          background-position -96px -36px
+
   .logo-search
     .logo
       width 320px
       height 132px
       overflow hidden
+      background-color #FFF
     .select-store
       padding-left 10px
       padding-top 50px
       font-size 16px
       line-height 30px
+      a
+        padding-right 20px
+        position relative
+        i
+          position absolute
+          top 4px
+          right 0
+          display block
+          width 16px
+          height 16px
+          background unquote('url(/static/img/icon/'+season+'-icons.png)') 0 0 no-repeat
     .search-box
       margin-top 35px
       a

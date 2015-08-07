@@ -1,7 +1,6 @@
 <div id="footer">
   <div class="container">
     <div class="footer-pic">
-      <img src="/static/img/icon/footer.jpg" alt="" />
     </div>
     <div class="footer-public clearfix">
       <div class="item">

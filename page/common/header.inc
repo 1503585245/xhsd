@@ -8,13 +8,13 @@
         <a href="http://www.zxhsd.com/Club/register_first.jsp">注册</a>
       </div>
       <div class="right">
-        <a href="http://www.zxhsd.com/Club/searchOrder.jsp">我的订单</a>
+        <a href="http://www.zxhsd.com/Club/searchOrder.jsp" class="order"><i></i>我的订单</a>
         <span> | </span>
-        <a href="http://www.zxhsd.com/Club/ly_cx.jsp" class="msg">我的消息</a>
+        <a href="http://www.zxhsd.com/Club/ly_cx.jsp" class="msg"><i></i>我的消息</a>
         <span> | </span>
-        <a href="http://www.zxhsd.com/Shopping/shopping1.jsp" class="cart">购物车</a>
+        <a href="http://www.zxhsd.com/Shopping/shopping1.jsp" class="cart"><i></i>购物车</a>
         <span> | </span>
-        <a href="http://book.zxhsd.com/help/help.shtml">帮助中心</a>
+        <a href="http://book.zxhsd.com/help/help.shtml" class="help"><i></i>帮助中心</a>
       </div>
     </div>
   </div>
@@ -25,7 +25,7 @@
           <a href="#"><img src="/static/img/logo.png" alt="" /></a>
         </div>
         <div class="select-store left">
-          <a href="#">选择门店</a>
+          <a href="#">选择门店<i></i></a>
         </div>
       </div>
       <div class="right">
