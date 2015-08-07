@@ -1,7 +1,9 @@
 <ul class="book-list">
   <li>
-    <div class="img-box">
-      <img src="/static/img/banner/banner_01.jpg" alt="世界疯狂世界疯狂世界疯狂世界疯狂" />
+    <div class="img-box-parent">
+      <div class="img-box">
+        <img src="/static/img/banner/banner_01.jpg" alt="世界疯狂世界疯狂世界疯狂世界疯狂" />
+      </div>
     </div>
     <h4><a href="#" target="_blank">世界疯狂世界疯狂世界疯狂世界疯狂</a></h4>
     <p>
