@@ -46,3 +46,4 @@ require(['jquery','slider'],function($,slider){
     autoTime : 3000
   })
 });
+

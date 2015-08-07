@@ -9,23 +9,27 @@
   li
     /* 设置li的padding */
     float left
-    height 250px
+    height 240px
     width img-width
+    margin-top 10px
     .img-box
-      padding 15px 0 5px 0
+      padding 5px 0
       width img-width
       height img-width
+      *font-size 120px
+      zoom 1
       text-align center
       overflow hidden
-      display table
-      .img
-        vertical-align middle
-        display table-cell
-        text-align center
+      display table-cell
+      vertical-align middle
       img
+        display block
+        margin auto
+        *display inline
+        _display inline
         max-width img-width
         max-height img-width
-        _height 100%
+
     h4
       padding 0 20px
       width 120px
@@ -186,16 +190,13 @@
       width 100%
       text-align center
       bottom 20px
-      height 20px
       .slider-btn
-        font-size 0
-        display inline-block
-        _zoom 1
-        *display inline
         width 20px
         height 20px
-        margin 0 5px
-        z-index 10
+        display inline-block
+        *display inline
+        zoom 1
+        margin 0 10px
         background-color #FFF
         border-radius(10px)
         &.active
