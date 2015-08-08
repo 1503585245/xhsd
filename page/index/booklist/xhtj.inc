@@ -3,6 +3,7 @@
     <div class="img-box-parent">
       <div class="img-box">
         <img src="/static/img/banner/banner_01.jpg" alt="世界疯狂世界疯狂世界疯狂世界疯狂" />
+        <i></i>
       </div>
     </div>
     <h4><a href="#" target="_blank">世界疯狂世界疯狂世界疯狂世界疯狂</a></h4>
@@ -13,7 +14,7 @@
   </li>
   <li>
     <div class="img-box">
-      <img src="/static/img/banner/banner_01.jpg" alt="世界疯狂世界疯狂世界疯狂世界疯狂" />
+      <a href=""><img src="/static/img/banner/banner_01.jpg" alt="世界疯狂世界疯狂世界疯狂世界疯狂" /></a>
     </div>
     <h4><a href="#" target="_blank">世界疯狂世界疯狂世界疯狂世界疯狂</a></h4>
     <p>

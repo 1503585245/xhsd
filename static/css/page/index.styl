@@ -12,24 +12,17 @@
     height 240px
     width img-width
     margin-top 10px
-    .img-box-parent
-      table-layout fixed
-      display table
+
     .img-box
       padding 5px 0
       width img-width
       height img-width
-      *font-size 120px
-      *zoom 1
       overflow hidden
-      display table-cell
-      vertical-align middle
-
+      line-height img-width
+      text-align center
       img
-        display block
-        margin auto
-        *display inline
-        _display inline
+        *margin-top unquote('expression((160 - this.height)/2);')
+        vertical-align middle
         max-width img-width
         max-height img-width
         _width unquote('expression(this.offsetWidth < "160" ? "auto" : "160px");')
@@ -85,6 +78,7 @@
     font-size 18px
     text-indent 10px
   .tab-sidebar-box
+    box-shadow -3px 3px 5px border-color
     width 222px
     height 508px
     border 1px solid border-color
@@ -189,6 +183,7 @@
 .first-screen
   padding 10px 0 0 218px
   .banner-box
+    box-shadow -5px 5px 5px border-color
     width 750px
     height 340px
     .slider-btn-box
@@ -225,6 +220,7 @@
       line-height 25px
       text-indent 5px
     .notice-list
+      box-shadow -3px 3px 5px border-color
       border 1px solid border-color
       height 200px
       width 222px
@@ -241,6 +237,7 @@
       border 1px solid border-color
       height 127px
       width 222px
+      box-shadow -3px 3px 5px border-color
       img
         margin 5px 10px
         width 90px
