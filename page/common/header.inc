@@ -26,7 +26,7 @@
         </div>
       </div>
       <div class="right">
-        <div class="search-box clearfix">
+        <div class="search-box">
           <form action="http://www.zxhsd.com/search/book_search.jsp" method="post">
             <input type="hidden" name="category" value="gjz">
             <input type="text" class="input input-search left" name="keyword">
