@@ -3,7 +3,13 @@
 @require "../widget/slider.styl"
 @require "./common/footer.styl"
 
-
+.container.main
+  background-color #FFF
+/* header nav */
+#nav
+  .main-list
+    .list
+      display block
 /* book-list */
 .book-list
   li
@@ -12,7 +18,10 @@
     height 240px
     width img-width
     margin-top 10px
-
+    a
+      color book-color
+      &:hover
+        color main-color
     .img-box
       padding 5px 0
       width img-width
@@ -36,10 +45,12 @@
     p
       padding 0 20px
     strong
-      color #c40000
+      font-size 13px
+      font-weight 700
+      color strong-color
     em
       float right
-      color border-color
+      color a-lcolor
       text-decoration line-through
       font-style normal
 
@@ -51,14 +62,21 @@
     margin-bottom 3px
     width 100%
     height 45px
-    border-bottom 2px solid main-color
-    font-size 18px
+    border-bottom 3px solid main-color
+    font-size 16px
+    //font-weight 700
+    letter-spacing 1px
     line-height 45px
     text-indent 5px
     color sub-color
+    text-shadow(1px 1px 1px sub-color)
+    b
+      _font-size 28px
+      _color main-color
     &:first-letter
       font-size 28px
       color main-color
+      text-shadow(1px 1px 1px main-color)
   ul
     margin-left 1px
     height 500px
@@ -75,10 +93,12 @@
     height 40px
     line-height 40px
     color main-color
-    font-size 18px
+    font-size 16px
+    //font-weight 700
+    text-shadow(0 0 1px main-color)
     text-indent 10px
   .tab-sidebar-box
-    box-shadow -3px 3px 5px border-color
+    box-shadow(0 0 2px border-color)
     width 222px
     height 508px
     border 1px solid border-color
@@ -156,14 +176,16 @@
     margin 0 5px
     padding 5px 0
     height 90px
-    background-color #f7f7f7
+    background-color back-color
     line-height 30px
     li
+      background url(/static/img/icon/pointer.png) 10px center no-repeat
       padding-left 30px
       font-size 14px
   .author-bottom
     margin 30px 20px
     li
+
       padding 0
       height 28px
       float left
@@ -183,9 +205,9 @@
 .first-screen
   padding 10px 0 0 218px
   .banner-box
-    box-shadow -5px 5px 5px border-color
     width 750px
     height 340px
+    box-shadow(0 0 2px border-color)
     .slider-btn-box
       width 100%
       text-align center
@@ -214,13 +236,13 @@
     width 224px
     height 340px
     h3
-      font-size 120%
-      font-weight 700
+      font-size 14px
       color main-color
       line-height 25px
       text-indent 5px
+      text-shadow(0 0 .5px main-color)
     .notice-list
-      box-shadow -3px 3px 5px border-color
+      box-shadow(0 0 2px border-color)
       border 1px solid border-color
       height 200px
       width 222px
@@ -237,7 +259,7 @@
       border 1px solid border-color
       height 127px
       width 222px
-      box-shadow -3px 3px 5px border-color
+      box-shadow(0 0 2px border-color)
       img
         margin 5px 10px
         width 90px
@@ -258,22 +280,29 @@
       width 750px
       width 100%
       height 45px
-      border-bottom 2px solid main-color
-      font-size 18px
+      border-bottom 3px solid main-color
+      font-size 16px
+      //font-weight 700
+      letter-spacing 1px
       line-height 45px
       text-indent 5px
       color sub-color
       position absolute
       left 0
       top 0
-      z-index -1
+      z-index 1
+      text-shadow(1px 1px 1px sub-color)
+      b
+        _font-size 28px
+        _color main-color
       &:first-letter
+        text-shadow(1px 1px 1px main-color)
         font-size 28px
         color main-color
     .tab-control
       margin-left img-width
       width 590px
-      font-size 18px
+      font-size 16px
       z-index 10
       position relative
       padding-top 5px
@@ -282,14 +311,16 @@
         float left
         padding 0 20px
         margin 0 20px
-        height 38px
-        line-height 40px
-        *line-height 38px
-        color main-color
+        height 35px
+        line-height 38px
+        *line-height 35px
+        color a-color
         border-radius(5px 5px 0 0)
+
         &.active
-          border 2px solid main-color
-          border-bottom 2px solid #FFF
+          color main-color
+          border 3px solid main-color
+          border-bottom 5px solid #FFF
           background-color #FFF
     .tab-item
       display none
@@ -326,6 +357,9 @@
         li
           margin 0;
           &.active
+            padding-top 10px
+            padding-bottom 10px
+            height 210px
             p
               translate(all 1s)
               width 120px
@@ -339,7 +373,7 @@
             top 8px
             left 10px
             font-size 24px
-            color #c40000
+            color strong-color
 
 /* second-screen */
 .second-screen
@@ -349,7 +383,6 @@
       padding 0 11px
       li
         margin 0;
-        width 200px
         position relative
         height 45px
         width 100%
@@ -375,10 +408,8 @@
           height 30px
 
         &.active
-
-          width img-width
-          height 230px
-          padding 0 0 0 40px
+          height 210px
+          padding 10px 0 10px 40px
           width auto
           div,p
             display block
@@ -422,8 +453,12 @@
       width 200px
       padding 0 11px
       li
+        background url(/static/img/icon/pointer.png) 8px center no-repeat
         margin 0;
         &.active
+          height 210px
+          padding 10px 0 10px 40px
+          background none
           p
             translate(all 1s)
             width 120px
@@ -442,6 +477,8 @@
     overflow hidden
     .tab-control
       margin-right -2px
+      a
+        text-decoration none
       li
         position relative
         float left
@@ -449,10 +486,9 @@
         width 149px
         border-left 1px solid border-color
         border-bottom 1px solid border-color
-        background-color #f7f7f7
+        background-color back-color
         cursor pointer
         &.first-item
-          border-left none
           i
             background-position -3px -3px
         &.second-item
@@ -465,6 +501,7 @@
           i
             background-position -183px -3px
         &.fifth-item
+          border-left none
           i
             background-position -243px -3px
         &.sixth-item
@@ -493,12 +530,16 @@
           line-height 30px
           text-align center
           font-size 12px
+          font-weight normal
+          letter-spacing auto
           color #000
           text-indent 0
           border none
+          text-shadow(none)
           &:first-letter
             font-size 12px
             color #000
+            text-shadow(none)
     .tab-item
       display none
       width 1200px
@@ -511,14 +552,21 @@
     margin-bottom 3px
     width 100%
     height 45px
-    border-bottom 2px solid main-color
-    font-size 18px
+    border-bottom 3px solid main-color
+    font-size 16px
+    //font-weight 700
+    letter-spacing 1px
     line-height 45px
     text-indent 5px
     color sub-color
+    text-shadow(1px 1px 1px sub-color)
+    b
+      _font-size 28px
+      _color main-color
     &:first-letter
       font-size 28px
       color main-color
+      text-shadow(1px 1px 1px main-color)
   ul
     height 500px
     overflow hidden

@@ -15,12 +15,22 @@
       text-align center
       color #fff
       font-size 15px
+      cursor pointer
+      text-shadow(0 0 1px #FFF)
+    &.active
+      .list
+        display block
     .list
+      display none
       position absolute
       left 0
       top nav-height
       border 1px solid main-color
       border-top none
+      width auto
+      height auto
+      background-color #FFF
+      box-shadow(0 0 3px main-color)
       dl
         width 186px
         padding 0 10px
@@ -34,7 +44,7 @@
             text-decoration none
         font-size 14px
         line-height 25px
-        font-weight bold
+        text-shadow(0 1px 1px main-color)
 
       dd
         font-size 12px
@@ -51,6 +61,7 @@
       padding 0 30px
       color #FFF
       font-size 14px
+      text-shadow(0 0 1px #FFF)
       &:hover
         background-color #e54e12
         color #FFF

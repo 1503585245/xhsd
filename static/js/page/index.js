@@ -2,7 +2,6 @@ require.config({
   baseUrl : '../js',
   paths : {
     jquery : './lib/jquery',
-    jqueryUI : './lib/jquery-ui',
     tabview : './widget/tabview',
     checkLogin : './core/checklogin',
     slider : './widget/slider'

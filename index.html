@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
   <meta charset="gb2312">
   <meta name="description" content="在线销售图书，音像，软件等数十万种商品的网上购物平台，网上购物，网上书店，新华书店，网上书城，快递送货上门，货到付款，品种最多的中文网上书店,全球中文书最大的网站">
   <meta name="keyword" content="新华书店,浙江新华,网上购物,网上商城,网上买书,购物中心,在线购物,图书,影视,音像,教育音像">
@@ -9,7 +9,7 @@
 </head>
 <body>
 <!--#include virtual="/page/common/header.inc"-->
-<div class="container">
+<div class="container main">
   <div class="first-screen clearfix">
     <div class="banner-box left">
       <!-- banner -->
@@ -18,15 +18,7 @@
     <div class="notice right">
       <div class="notice-list">
         <h3>最新动态</h3>
-        <ul>
-          <li><a href="#" target="">动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1</a></li>
-          <li><a href="#" target="">动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1</a></li>
-          <li><a href="#" target="">动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1</a></li>
-          <li><a href="#" target="">动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1</a></li>
-          <li><a href="#" target="">动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1</a></li>
-          <li><a href="#" target="">动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1</a></li>
-          <li><a href="#" target="">动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1动态1</a></li>
-        </ul>
+        <!--#include virtual="/page/index/news/news.inc"-->
       </div>
       <div class="wx">
         <h3>微信商城</h3>
@@ -37,17 +29,25 @@
       </div>
     </div>
     <div class="main-tab-view left">
-      <h3>新书推荐</h3>
+      <h3><b>新</b>书推荐</h3>
       <ul class="tab-control clearfix">
         <li class="active">少儿</li>
         <li>文艺</li>
         <li>经管</li>
         <li>生活</li>
       </ul>
-      <!--#include virtual="/page/index/xstj/se.inc"-->
-      <!--#include virtual="/page/index/xstj/wy.inc"-->
-      <!--#include virtual="/page/index/xstj/jg.inc"-->
-      <!--#include virtual="/page/index/xstj/sh.inc"-->
+      <div class="tab-item book-list active">
+        <!--#include virtual="/page/index/xstj/se/common.inc"-->
+      </div>
+      <div class="tab-item book-list">
+        <!--#include virtual="/page/index/xstj/wy/common.inc"-->
+      </div>
+      <div class="tab-item book-list">
+        <!--#include virtual="/page/index/xstj/jg/common.inc"-->
+      </div>
+      <div class="tab-item book-list">
+        <!--#include virtual="/page/index/xstj/sh/common.inc"-->
+      </div>
     </div>
     <div class="tab-sidebar right">
       <h3>排行榜</h3>
@@ -57,16 +57,25 @@
           <li>每月排行</li>
           <li>新华推荐</li>
         </ul>
-        <!--#include virtual="/page/index/phb/mztj.inc"-->
-        <!--#include virtual="/page/index/phb/mytj.inc"-->
-        <!--#include virtual="/page/index/phb/xhtj.inc"-->
+        <div class="tab-item active">
+          <!--#include virtual="/page/index/phb/mzph/common.inc"-->
+          <h5><a href="#">查看完整榜单&gt;&gt;</a></h5>
+        </div>
+        <div class="tab-item">
+          <!--#include virtual="/page/index/phb/myph/common.inc"-->
+          <h5><a href="#">查看完整榜单&gt;&gt;</a></h5>
+        </div>
+        <div class="tab-item">
+          <!--#include virtual="/page/index/phb/xhtj/common.inc"-->
+          <h5><a href="#">查看完整榜单&gt;&gt;</a></h5>
+        </div>
       </div>
     </div>
   </div>
   <div class="second-screen clearfix">
     <div class="list-warp left">
-      <h3>新华推荐</h3>
-      <!--#include virtual="/page/index/booklist/xhtj.inc"-->
+      <h3><b>新</b>华推荐</h3>
+      <!--#include virtual="/page/index/booklist/xhtj/common.inc"-->
     </div>
     <div class="tab-sidebar right">
       <h3>限时特价</h3>
@@ -85,23 +94,23 @@
   </div>
   <div class="third-screen clearfix">
     <div class="list-warp left">
-      <h3>读书活动</h3>
-      <!--#include virtual="/page/index/booklist/dshd.inc"-->
+      <h3><b>读</b>书活动</h3>
+      <!--#include virtual="/page/index/booklist/dshd/common.inc"-->
     </div>
     <div class="tab-sidebar right">
       <h3>人气作家</h3>
       <div class="tab-sidebar-box">
-        <!--#include virtual="/page/index/author/shenshixi.inc"-->
+        <!--#include virtual="/page/index/author/author.inc"-->
         <div class="author-bottom">
-          <!--#include virtual="/page/index/author/author.inc"-->
+          <!--#include virtual="/page/index/author/authorlist.inc"-->
         </div>
       </div>
     </div>
   </div>
   <div class="forth-screen clearfix">
     <div class="list-warp left">
-      <h3>典藏书架</h3>
-      <!--#include virtual="/page/index/booklist/dcsj.inc"-->
+      <h3><b>典</b>藏书架</h3>
+      <!--#include virtual="/page/index/booklist/dcsj/common.inc"-->
     </div>
     <div class="tab-sidebar right">
       <h3>媒体关注</h3>
@@ -112,26 +121,42 @@
     </div>
   </div>
   <div class="fifth-screen clearfix">
-    <h3>浙版名社</h3>
+    <h3><b>浙</b>版名社</h3>
     <div class="tab-view">
       <div class="tab-control clearfix">
-        <li class="active first-item"><a href=""><i></i><h3>浙江科学技术出版社</h3></a></li>
-        <li class="second-item"><a href=""><i></i><h3>浙江摄影出版社</h3></a></li>
-        <li class="third-item"><a href=""><i></i><h3>浙江少年儿童出版社</h3></a></li>
-        <li class="forth-item"><a href=""><i></i><h3>浙江文艺出版社</h3></a></li>
-        <li class="fifth-item"><a href=""><i></i><h3>浙江人民出版社</h3></a></li>
+        <li class="fifth-item active"><a href=""><i></i><h3>浙江人民出版社</h3></a></li>
         <li class="sixth-item"><a href=""><i></i><h3>浙江人民美术出版社</h3></a></li>
+        <li class="first-item"><a href=""><i></i><h3>浙江科学技术出版社</h3></a></li>
+        <li class="forth-item"><a href=""><i></i><h3>浙江文艺出版社</h3></a></li>
+        <li class="third-item"><a href=""><i></i><h3>浙江少年儿童出版社</h3></a></li>
         <li class="seventh-item"><a href=""><i></i><h3>浙江教育出版社</h3></a></li>
         <li class="eighth-item"><a href=""><i></i><h3>浙江古籍出版社</h3></a></li>
+        <li class="second-item"><a href=""><i></i><h3>浙江摄影出版社</h3></a></li>
       </div>
-      <!--#include virtual="/page/index/cbs/zjkx.inc"-->
-      <!--#include virtual="/page/index/cbs/zjsy.inc"-->
-      <!--#include virtual="/page/index/cbs/zjsnet.inc"-->
-      <!--#include virtual="/page/index/cbs/zjwy.inc"-->
-      <!--#include virtual="/page/index/cbs/zjrm.inc"-->
-      <!--#include virtual="/page/index/cbs/zjms.inc"-->
-      <!--#include virtual="/page/index/cbs/zjjy.inc"-->
-      <!--#include virtual="/page/index/cbs/zjgj.inc"-->
+      <div class="tab-item active">
+        <!--#include virtual="/page/index/cbs/zjrm/common.inc"-->
+      </div>
+      <div class="tab-item">
+        <!--#include virtual="/page/index/cbs/zjms/common.inc"-->
+      </div>
+      <div class="tab-item">
+        <!--#include virtual="/page/index/cbs/zjkx/common.inc"-->
+      </div>
+      <div class="tab-item">
+        <!--#include virtual="/page/index/cbs/zjwy/common.inc"-->
+      </div>
+      <div class="tab-item">
+        <!--#include virtual="/page/index/cbs/zjsnet/common.inc"-->
+      </div>
+      <div class="tab-item">
+        <!--#include virtual="/page/index/cbs/zjjy/common.inc"-->
+      </div>
+      <div class="tab-item">
+        <!--#include virtual="/page/index/cbs/zjgj/common.inc"-->
+      </div>
+      <div class="tab-item">
+        <!--#include virtual="/page/index/cbs/zjsy/common.inc"-->
+      </div>
     </div>
   </div>
 </div>

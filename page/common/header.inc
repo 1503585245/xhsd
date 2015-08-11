@@ -3,9 +3,6 @@
     <div class="container clearfix">
       <div class="left">
         <span>您好！欢迎光临！ </span>
-        <a href="http://www.zxhsd.com/Club/login.jsp">登录</a>
-        <span> | </span>
-        <a href="http://www.zxhsd.com/Club/register_first.jsp">注册</a>
       </div>
       <div class="right">
         <a href="http://www.zxhsd.com/Club/searchOrder.jsp" class="order"><i></i>我的订单</a>
@@ -38,11 +35,12 @@
           </form>
         </div>
         <div class="search-list">
-          <a href="#">111</a>
-          <a href="#">111</a>
-          <a href="#">111</a>
-          <a href="#">111</a>
-          <a href="#">111</a>
+          <span>热搜：</span>
+          <a href="http://www.zxhsd.com/search/book_search.jsp?keyword=秘密花园&category=gjz">秘密花园</a>
+          <a href="http://www.zxhsd.com/search/book_search.jsp?keyword=巴巴爸爸&category=gjz">巴巴爸爸</a>
+          <a href="http://www.zxhsd.com/search/book_search.jsp?keyword=查理九世&category=gjz">查理九世</a>
+          <a href="http://www.zxhsd.com/search/book_search.jsp?keyword=花千骨&category=gjz">花千骨</a>
+          <a href="http://www.zxhsd.com/search/book_search.jsp?keyword=真爱并非运气被爱是种实力&category=gjz">真爱并非运气被爱是种实力</a>
         </div>
       </div>
     </div>

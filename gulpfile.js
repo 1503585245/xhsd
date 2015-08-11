@@ -21,11 +21,21 @@ gulp.task('index',function(){
       slider : './widget/slider'
     },
     include : [
-      'jquery',
-      'tabview',
-      'checkLogin',
-      'slider',
       './page/index.js'
+    ]
+  }).pipe(uglify()).pipe(gulp.dest('static/dist/js/'));
+});
+
+gulp.task('item',function(){
+  rjs({
+    baseUrl : 'static/js',
+    out : 'item.js',
+    paths : {
+      jquery : './lib/jquery',
+      checkLogin : './core/checklogin',
+    },
+    include : [
+      './page/item.js'
     ]
   }).pipe(uglify()).pipe(gulp.dest('static/dist/js/'));
 });
