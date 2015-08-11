@@ -19,8 +19,11 @@ text-shadow(s)
   -moz-text-shadow s
   -webkit-text-shadow s
   //filter unquote('progid:DXImageTransform.Microsoft.Blur(pixelRadius=0,MakeShadow=false);')
-  font-weight unquote('bold\0\9')
+  font-weight unquote('bold\0')
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+    font-weight normal
   _font-weight bold
+  *font-weight bold
 box-shadow(s)
   -webkit-box-shadow s
   -moz-box-shadow s
