@@ -122,8 +122,6 @@
         play();
       });
       play();
-
-      return this;
     }
   };
 
@@ -131,10 +129,7 @@
     slider : function(opt){
       var that = $(this);
       new Slider().create(that,opt).move();
+      return this
     }
   });
-
-  return {
-    Slider : Slider
-  }
 });

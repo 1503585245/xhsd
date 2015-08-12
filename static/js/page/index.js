@@ -39,10 +39,14 @@ require(['jquery','tabview'],function($,tabview){
   })
 });
 
-require(['jquery','slider'],function($,slider){
+require(['jquery','slider'],function($){
   $('.banner-box').slider({
     speed : 500,
     autoTime : 3000
+  }).on('mouseover',function(){
+    $(this).find('.slider-prev,.slider-next').show();
+  }).on('mouseout',function(){
+    $(this).find('.slider-prev,.slider-next').hide();
   })
 });
 

@@ -34,8 +34,9 @@
         vertical-align middle
         max-width img-width
         max-height img-width
-        _width unquote('expression(this.offsetWidth < "160" ? "auto" : "160px");')
+        //_width unquote('expression(this.offsetWidth < "160" ? "auto" : "160px");')
         _height unquote('expression(this.offsetHeight < "160" ? "auto" : "160px");')
+        //_width auto
     h4
       padding 0 20px
       width 120px
@@ -222,14 +223,20 @@
         &.active
           background-color main-color
     .slider-prev,.slider-next
-      width 50px
-      height 100px
-      background-color #000
-      opacity(0.3);
+      display none
+      width 45px
+      height 110px
       top 50%
-      margin-top -50px
+      margin-top -55px
+      background url(/static/img/icon/prev-next.png) no-repeat
+    .slider-prev
+      background-position -3px -3px
       &:hover
-        opacity(0.5);
+        background-position -3px -119px
+    .slider-next
+      background-position -58px -3px
+      &:hover
+        background-position -58px -119px
   .notice
     width 224px
     height 340px
