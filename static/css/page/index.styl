@@ -69,14 +69,14 @@
     line-height 45px
     text-indent 5px
     color sub-color
-    text-shadow(1px 1px 1px sub-color)
+    text-shadow(0 0 1px sub-color)
     b
       _font-size 28px
       _color main-color
     &:first-letter
       font-size 28px
       color main-color
-      text-shadow(1px 1px 1px main-color)
+      text-shadow(0 0 1px main-color)
   ul
     margin-left 1px
     height 500px
@@ -210,20 +210,21 @@
     .slider-btn-box
       width 100%
       text-align center
-      bottom 20px
+      bottom 10px
       .slider-btn
-        width 20px
-        height 20px
+        width 8px
+        height 8px
         display inline-block
         *display inline
         zoom 1
-        margin 0 10px
-        background-color #FFF
-        border-radius(10px)
+        margin 0 4px
+        background url(/static/img/icon/slider-btn.png) -1px -1px no-repeat
+        border-radius(4px)
         &.active
-          background-color main-color
+          background url(/static/img/icon/slider-btn.png) -11px -1px no-repeat
     .slider-prev,.slider-next
       display none
+      cursor pointer
       width 45px
       height 110px
       top 50%
@@ -234,9 +235,9 @@
       &:hover
         background-position -3px -119px
     .slider-next
-      background-position -58px -3px
+      background-position -54px -3px
       &:hover
-        background-position -58px -119px
+        background-position -54px -119px
   .notice
     width 224px
     height 340px
@@ -253,12 +254,16 @@
       width 222px
       margin-bottom 10px
       ul
-        padding 0 15px
-        width 192px
+        padding 0 10px
+        width 202px
         li
+          background url(/static/img/icon/pointer.png) 0 8px no-repeat
           padding-left 15px
           height 25px
           line-height 25px
+          text-overflow ellipsis
+          white-space nowrap
+          *white-space normal
           overflow hidden
     .wx
       border 1px solid border-color
@@ -295,12 +300,12 @@
       left 0
       top 0
       z-index 1
-      text-shadow(1px 1px 1px sub-color)
+      text-shadow(0 0 1px sub-color)
       b
         _font-size 28px
         _color main-color
       &:first-letter
-        text-shadow(1px 1px 1px main-color)
+        text-shadow(0 0 1px main-color)
         font-size 28px
         color main-color
     .tab-control
@@ -563,14 +568,14 @@
     line-height 45px
     text-indent 5px
     color sub-color
-    text-shadow(1px 1px 1px sub-color)
+    text-shadow(0 0 1px sub-color)
     b
       _font-size 28px
       _color main-color
     &:first-letter
       font-size 28px
       color main-color
-      text-shadow(1px 1px 1px main-color)
+      text-shadow(0 0 1px main-color)
   ul
     height 500px
     overflow hidden

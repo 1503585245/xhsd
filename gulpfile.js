@@ -16,9 +16,12 @@ gulp.task('index',function(){
     out : 'index.js',
     paths : {
       jquery : './lib/jquery',
-      tabview : './widget/tabview',
-      checkLogin : './core/checklogin',
-      slider : './widget/slider'
+      tabView : './widget/tabView',
+      checkLogin : './core/checkLogin',
+      slider : './widget/slider',
+      xhsdJson : './core/xhsdJson',
+      getJsonName : './core/getJsonName',
+      getUrl : './core/getUrl'
     },
     include : [
       './page/index.js'
@@ -32,7 +35,7 @@ gulp.task('item',function(){
     out : 'item.js',
     paths : {
       jquery : './lib/jquery',
-      checkLogin : './core/checklogin',
+      checkLogin : './core/checkLogin'
     },
     include : [
       './page/item.js'

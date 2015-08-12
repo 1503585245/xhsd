@@ -22,7 +22,7 @@
           <a href="#"><img src="/static/img/logo.png" alt="" /></a>
         </div>
         <div class="select-store left">
-          <a href="#">选择门店<i></i></a>
+          <a href="#" id="store">选择门店<i></i></a>
         </div>
       </div>
       <div class="right">

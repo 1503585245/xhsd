@@ -2,9 +2,12 @@ require.config({
   baseUrl : '../js',
   paths : {
     jquery : './lib/jquery',
-    tabview : './widget/tabview',
-    checkLogin : './core/checklogin',
-    slider : './widget/slider'
+    tabView : './widget/tabView',
+    checkLogin : './core/checkLogin',
+    slider : './widget/slider',
+    xhsdJson : './core/xhsdJson',
+    getJsonName : './core/getJsonName',
+    getUrl : './core/getUrl'
   },
   urlArgs: "bust=" +  (new Date()).getTime()
 });
@@ -30,7 +33,7 @@ require(['jquery','checkLogin'],function($,checklogin){
   });
 });
 
-require(['jquery','tabview'],function($,tabview){
+require(['jquery','tabView'],function($,tabview){
   new tabview.TabView().tab({
     control : '.tab-control',
     item : '.tab-item'
@@ -50,3 +53,21 @@ require(['jquery','slider'],function($){
   })
 });
 
+
+require(['jquery','getJsonName','getUrl'],function($,getname,geturl){
+  var url = window.location.href;
+  var store = new geturl.GetUrl().firstDomain(url);
+  $('.wx').find('img').attr('src','/static/img/wx/'+store+'.jpg');
+
+  $('#store').html(new getname.GetJsonName().getName(url)+'<i></i>');
+
+  var path = '/page/index/news/'+store+'/news.inc';
+  $.ajax({
+    type : 'get',
+    url : path,
+    data : '',
+    success : function(data){
+      $('#news').html(data);
+    }
+  });
+});
