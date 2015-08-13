@@ -61,13 +61,22 @@ require(['jquery','getJsonName','getUrl'],function($,getname,geturl){
 
   $('#store').html(new getname.GetJsonName().getName(url)+'<i></i>');
 
-  var path = '/page/index/news/'+store+'/news.inc';
+  var pathNews = '/page/index/news/'+store+'/news.ajaxinc';
+  var pathDshd = '/page/index/dshd/'+store+'/dshd.ajaxinc';
   $.ajax({
     type : 'get',
-    url : path,
-    data : '',
+    url : pathNews,
+    dataType : 'text',
     success : function(data){
       $('#news').html(data);
+    }
+  });
+  $.ajax({
+    type : 'get',
+    url : pathDshd,
+    dataType : 'text',
+    success : function(data){
+      $('#dshd').html(data);
     }
   });
 });

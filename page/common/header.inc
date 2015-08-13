@@ -53,145 +53,173 @@
           <dl class="item first-item">
             <dt><a href="#">社科书店</a></dt>
             <dd>
-              <a href="#">历史</a>
-              <a href="#">人物传记</a>
-              <a href="#">哲学</a>
+              <a href="#">中国史</a>
+              <a href="#">哲学总论</a>
+              <a href="#">心理学</a><br>
+              <a href="#">军事理论</a>
+              <a href="#">政治理论</a>
               <a href="#">宗教</a>
-              <a href="#">心理学</a>
-              <a href="#">励志</a>
-              <a href="#">法律</a>
-              <a href="#">政治</a>
+            </dd>
+            <div class="sub-item">
+              <a href="">中国史</a>
+              <span>|</span>
+              <a href="">世界史</a>
+              <span>|</span>
+              <a href="">史学理论</a>
+              <span>|</span>
+              <a href="">中国哲学</a>
+              <span>|</span>
+              <a href="">外国哲学</a>
+              <span>|</span>
+              <a href="">哲学总论</a>
+              <br>
+              <a href="">中国军事</a>
+              <span>|</span>
+              <a href="">各国军事</a>
+              <span>|</span>
+              <a href="">军事理论</a>
+              <span>|</span>
+              <a href="">中国法律</a>
+              <span>|</span>
+              <a href="">外国法律</a>
+              <span>|</span>
+              <a href="">国际法</a>
+              <br>
+            </div>
+          </dl>
+          <dl class="item">
+            <dt><a href="#">文学书店</a></dt>
+            <dd>
+              <a href="#">中国小说</a>
+              <a href="#">外国小说</a>
+              <a href="#">中国诗词</a><br>
+              <a href="#">传记</a>
+              <a href="#">文学名著</a>
+              <a href="#">纪实文学</a>
+            </dd>
+            <div class="sub-item">
+              <a href="">中国史</a>
+              <span>|</span>
+              <a href="">世界史</a>
+              <span>|</span>
+              <a href="">史学理论</a>
+              <span>|</span>
+              <a href="">中国哲学</a>
+              <span>|</span>
+              <a href="">外国哲学</a>
+              <span>|</span>
+              <a href="">哲学总论</a>
+              <br>
+              <a href="">中国军事</a>
+              <span>|</span>
+              <a href="">各国军事</a>
+              <span>|</span>
+              <a href="">军事理论</a>
+              <span>|</span>
+              <a href="">中国法律</a>
+              <span>|</span>
+              <a href="">外国法律</a>
+              <span>|</span>
+              <a href="">国际法</a>
+              <br>
+            </div>
+          </dl>
+          <dl class="item">
+            <dt><a href="#">经管书店</a></dt>
+            <dd>
+              <a href="#">财经管理</a>
+              <a href="#">工商管理</a>
+              <a href="#">行业经济</a><br>
+              <a href="#">品牌营销</a>
+              <a href="#">商务技能</a>
+              <a href="#">市场营销</a>
             </dd>
           </dl>
           <dl class="item">
-            <dt><a href="#">社科书店</a></dt>
+            <dt><a href="#">少儿书店</a></dt>
             <dd>
-              <a href="#">历史</a>
-              <a href="#">人物传记</a>
-              <a href="#">哲学</a>
-              <a href="#">宗教</a>
-              <a href="#">心理学</a>
-              <a href="#">励志</a>
-              <a href="#">法律</a>
-              <a href="#">政治</a>
+              <a href="#">低幼读物</a>
+              <a href="#">儿童文学</a>
+              <a href="#">绘本</a><br>
+              <a href="#">励志成长</a>
+              <a href="#">学前教育</a>
+              <a href="#">连环画</a>
             </dd>
           </dl>
           <dl class="item">
-            <dt><a href="#">社科书店</a></dt>
+            <dt><a href="#">生活书店</a></dt>
             <dd>
-              <a href="#">历史</a>
-              <a href="#">人物传记</a>
-              <a href="#">哲学</a>
-              <a href="#">宗教</a>
-              <a href="#">心理学</a>
-              <a href="#">励志</a>
-              <a href="#">法律</a>
-              <a href="#">政治</a>
+              <a href="#">养生保健</a>
+              <a href="#">生活窍门</a>
+              <a href="#">烹饪食谱</a><br>
+              <a href="#">花鸟宠物</a>
+              <a href="#">居室设计</a>
+              <a href="#">期刊杂志</a>
             </dd>
           </dl>
           <dl class="item">
-            <dt><a href="#">社科书店</a></dt>
+            <dt><a href="#">艺术书店</a></dt>
             <dd>
-              <a href="#">历史</a>
-              <a href="#">人物传记</a>
-              <a href="#">哲学</a>
-              <a href="#">宗教</a>
-              <a href="#">心理学</a>
-              <a href="#">励志</a>
-              <a href="#">法律</a>
-              <a href="#">政治</a>
+              <a href="#">摄影</a>
+              <a href="#">漫画</a>
+              <a href="#">绘画</a>
+              <a href="#">音乐</a>
+              <a href="#">舞蹈</a><br>
+              <a href="#">书法篆刻</a>
+              <a href="#">工艺美术</a>
+              <a href="#">戏剧影视</a>
             </dd>
           </dl>
           <dl class="item">
-            <dt><a href="#">社科书店</a></dt>
+            <dt><a href="#">教育书店</a></dt>
             <dd>
-              <a href="#">历史</a>
-              <a href="#">人物传记</a>
-              <a href="#">哲学</a>
-              <a href="#">宗教</a>
-              <a href="#">心理学</a>
-              <a href="#">励志</a>
-              <a href="#">法律</a>
-              <a href="#">政治</a>
+              <a href="#">小学教辅</a>
+              <a href="#">初中教辅</a>
+              <a href="#">高中教辅</a>
+              <a href="#">汉语文化</a>
+              <a href="#">英语</a>
+              <a href="#">日语</a>
+              <a href="#">德语</a>
             </dd>
           </dl>
           <dl class="item">
-            <dt><a href="#">社科书店</a></dt>
+            <dt><a href="#">医学书店</a></dt>
             <dd>
-              <a href="#">历史</a>
-              <a href="#">人物传记</a>
-              <a href="#">哲学</a>
-              <a href="#">宗教</a>
-              <a href="#">心理学</a>
-              <a href="#">励志</a>
-              <a href="#">法律</a>
-              <a href="#">政治</a>
+              <a href="#">中医学</a>
+              <a href="#">内科学</a>
+              <a href="#">基础医学</a><br>
+              <a href="#">儿科学</a>
+              <a href="#">肿瘤学</a>
+              <a href="#">临床医学</a>
             </dd>
           </dl>
           <dl class="item">
-            <dt><a href="#">社科书店</a></dt>
+            <dt><a href="#">计算机书店</a></dt>
             <dd>
-              <a href="#">历史</a>
-              <a href="#">人物传记</a>
-              <a href="#">哲学</a>
-              <a href="#">宗教</a>
-              <a href="#">心理学</a>
-              <a href="#">励志</a>
-              <a href="#">法律</a>
-              <a href="#">政治</a>
+              <a href="#">程序与语言</a>
+              <a href="#">操作系统</a>
+              <a href="#">多媒体</a>
+              <a href="#">信息处理与数据</a>
+              <a href="#">应用软件</a>
             </dd>
           </dl>
           <dl class="item">
-            <dt><a href="#">社科书店</a></dt>
+            <dt><a href="#">科技书店</a></dt>
             <dd>
-              <a href="#">历史</a>
-              <a href="#">人物传记</a>
-              <a href="#">哲学</a>
-              <a href="#">宗教</a>
-              <a href="#">心理学</a>
-              <a href="#">励志</a>
-              <a href="#">法律</a>
-              <a href="#">政治</a>
+              <a href="#">农学</a>
+              <a href="#">力学</a>
+              <a href="#">化学</a>
+              <a href="#">地球科学</a><br>
+              <a href="#">航空航天</a>
+              <a href="#">建筑科学</a>
+              <a href="#">交通运输</a>
             </dd>
           </dl>
           <dl class="item">
-            <dt><a href="#">社科书店</a></dt>
-            <dd>
-              <a href="#">历史</a>
-              <a href="#">人物传记</a>
-              <a href="#">哲学</a>
-              <a href="#">宗教</a>
-              <a href="#">心理学</a>
-              <a href="#">励志</a>
-              <a href="#">法律</a>
-              <a href="#">政治</a>
-            </dd>
+            <dt class="on"><a href="#">原版书</a></dt>
           </dl>
           <dl class="item">
-            <dt><a href="#">社科书店</a></dt>
-            <dd>
-              <a href="#">历史</a>
-              <a href="#">人物传记</a>
-              <a href="#">哲学</a>
-              <a href="#">宗教</a>
-              <a href="#">心理学</a>
-              <a href="#">励志</a>
-              <a href="#">法律</a>
-              <a href="#">政治</a>
-            </dd>
-          </dl>
-          <dl class="item">
-            <dt><a href="#">社科书店</a></dt>
-            <dd>
-              <a href="#">历史</a>
-              <a href="#">人物传记</a>
-              <a href="#">哲学</a>
-              <a href="#">宗教</a>
-              <a href="#">心理学</a>
-              <a href="#">励志</a>
-              <a href="#">法律</a>
-              <a href="#">政治</a>
-            </dd>
+            <dt class="on"><a href="#">音像</a></dt>
           </dl>
         </div>
       </div>
