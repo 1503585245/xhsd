@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="gb2312">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="在线销售图书，音像，软件等数十万种商品的网上购物平台，网上购物，网上书店，新华书店，网上书城，快递送货上门，货到付款，品种最多的中文网上书店,全球中文书最大的网站">
   <meta name="keyword" content="新华书店,浙江新华,网上购物,网上商城,网上买书,购物中心,在线购物,图书,影视,音像,教育音像">
   <title>浙江新华书店网:品种最多的中文网上书店：图书，音像，软件，快递送货上门，货到付款</title>
@@ -19,7 +20,8 @@
       <div class="notice-list">
         <h3>最新动态</h3>
         <div id="news">
-          <!--#include virtual="/page/index/news/hangzhou/news.ajaxinc"-->
+          <!--#include virtual="/gg/gg.inc"-->
+          <!-- include virtual="/page/index/news/hangzhou/news.ajaxinc" -->
         </div>
       </div>
       <div class="wx">
@@ -76,7 +78,7 @@
   </div>
   <div class="second-screen clearfix">
     <div class="list-warp left">
-      <h3><b>新</b>华推荐</h3>
+      <h3><a href="" target="_blank">更多&gt;&gt;</a><b>新</b>华推荐</h3>
       <!--#include virtual="/page/index/booklist/xhtj/common.inc"-->
     </div>
     <div class="tab-sidebar right">
@@ -96,7 +98,7 @@
   </div>
   <div class="third-screen clearfix">
     <div class="list-warp left">
-      <h3><b>读</b>书活动</h3>
+      <h3><a href="/cxzs/" target="_blank">更多&gt;&gt;</a><b>读</b>书活动</h3>
       <div id="dshd">
         <!--#include virtual="/page/index/dshd/book/dshd.ajaxinc"-->
       </div>
@@ -113,7 +115,7 @@
   </div>
   <div class="forth-screen clearfix">
     <div class="list-warp left">
-      <h3><b>典</b>藏书架</h3>
+      <h3><a href="" target="_blank">更多&gt;&gt;</a><b>典</b>藏书架</h3>
       <!--#include virtual="/page/index/booklist/dcsj/common.inc"-->
     </div>
     <div class="tab-sidebar right">
@@ -164,6 +166,7 @@
     </div>
   </div>
 </div>
+<!--#include virtual="/page/common/backTop.inc"-->
 <!--#include virtual="/page/common/footer.inc"-->
 <script data-main="/static/dist/js/index.js" src="/static/js/require.js"></script>
 </body>

@@ -2,9 +2,11 @@
 @require "./common/header.styl"
 @require "../widget/slider.styl"
 @require "./common/footer.styl"
+@require "../widget/backTop.styl"
 
 .container.main
   background-color #FFF
+  position relative
 /* header nav */
 #nav
   .main-list
@@ -70,6 +72,7 @@
     text-indent 5px
     color sub-color
     text-shadow(0 0 1px sub-color)
+    position relative
     b
       _font-size 28px
       _color main-color
@@ -77,6 +80,13 @@
       font-size 28px
       color main-color
       text-shadow(0 0 1px main-color)
+    a
+      position absolute
+      right 10px
+      top 10px
+      font-size 14px
+      text-shadow(none)
+      font-weight normal
   ul
     margin-left 1px
     height 500px

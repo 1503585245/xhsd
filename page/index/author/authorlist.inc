@@ -1,4 +1,3 @@
-<li><a href="http://www.zxhsd.com/search/book_search.jsp?keyword=沈石溪&category=gjz" target="_blank">沈石溪</a></li>
 <li><a href="http://www.zxhsd.com/search/book_search.jsp?keyword=杨红樱&category=gjz" target="_blank">杨红樱</a></li>
 <li><a href="http://www.zxhsd.com/search/book_search.jsp?keyword=郭敬明&category=gjz" target="_blank">郭敬明</a></li>
 <li><a href="http://www.zxhsd.com/search/book_search.jsp?keyword=高晓松&category=gjz" target="_blank">高晓松</a></li>

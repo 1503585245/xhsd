@@ -21,7 +21,9 @@ gulp.task('index',function(){
       slider : './widget/slider',
       xhsdJson : './core/xhsdJson',
       getJsonName : './core/getJsonName',
-      getUrl : './core/getUrl'
+      getUrl : './core/getUrl',
+      scrollTo : './widget/scrollTo',
+      backTop : './widget/backTop'
     },
     include : [
       './page/index.js'

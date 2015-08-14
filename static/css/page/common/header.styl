@@ -57,17 +57,67 @@
       padding-top 50px
       font-size 16px
       line-height 30px
-      a
-        padding-right 20px
+      position relative
+      z-index 50
+      #store
+        padding 3px 25px 3px 10px
         position relative
+        z-index 50
+        cursor pointer
         i
+          z-index 50
           position absolute
-          top 4px
-          right 0
+          top 8px
+          right 5px
           display block
           width 16px
           height 16px
           background unquote('url(/static/img/icon/'+season+'-icons.png)') 0 0 no-repeat
+        &.active
+          border 2px solid main-color
+          border-bottom none
+          background-color #FFF
+      .select-store-list
+        display none
+        z-index 49
+        background-color #FFF
+        width 680px
+        padding 50px 50px 30px 50px
+        border 2px solid main-color
+        position absolute
+        top 76px
+        *top 78px
+        left 10px
+        dl
+          line-height 30px
+          height 30px
+          font-size 14px
+          dt
+            width 45px
+            display inline-block
+            *display inline
+            *zoom 1
+            color main-color
+            text-shadow(0 0 1px main-color);
+          dd
+            display inline-block
+            *display inline
+            *zoom 1
+            a
+              padding 0 15px
+        .imglist
+          margin-top 30px
+          border-top 1px dashed border-color
+          a
+            display inline-block
+            *display inline
+            *zoom 1
+            width 160px
+            height 50px
+            padding 5px 5px 5px 0
+            img
+              width 160px
+              height 50px
     .search-box
       width 650px
       height auto
