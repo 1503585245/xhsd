@@ -23,7 +23,8 @@ gulp.task('index',function(){
       getJsonName : './core/getJsonName',
       getUrl : './core/getUrl',
       scrollTo : './widget/scrollTo',
-      backTop : './widget/backTop'
+      backTop : './widget/backTop',
+      common : './core/common'
     },
     include : [
       './page/index.js'
@@ -37,7 +38,13 @@ gulp.task('item',function(){
     out : 'item.js',
     paths : {
       jquery : './lib/jquery',
-      checkLogin : './core/checkLogin'
+      checkLogin : './core/checkLogin',
+      xhsdJson : './core/xhsdJson',
+      getJsonName : './core/getJsonName',
+      getUrl : './core/getUrl',
+      scrollTo : './widget/scrollTo',
+      backTop : './widget/backTop',
+      common : './core/common'
     },
     include : [
       './page/item.js'

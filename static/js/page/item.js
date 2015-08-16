@@ -5,14 +5,15 @@ require.config({
   baseUrl : '../js',
   paths : {
     jquery : './lib/jquery',
-    checkLogin : './core/checklogin'
-  },
-  urlArgs: "bust=" +  (new Date()).getTime()
+    checkLogin : './core/checkLogin',
+    xhsdJson : './core/xhsdJson',
+    getJsonName : './core/getJsonName',
+    getUrl : './core/getUrl',
+    scrollTo : './widget/scrollTo',
+    backTop : './widget/backTop',
+    common : './core/common'
+  }
 });
-require(['jquery'],function($){
-  $('#nav .main-list').on('mouseover',function(){
-    $(this).addClass('active');
-  }).on('mouseout',function(){
-    $(this).removeClass('active');
-  });
+require(['jquery','common'],function($){
+  $.allCommon();
 });

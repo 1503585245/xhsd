@@ -2,7 +2,7 @@
 @require "./common/header.styl"
 @require "../widget/slider.styl"
 @require "./common/footer.styl"
-@require "../widget/backTop.styl"
+
 
 .container.main
   background-color #FFF
@@ -36,9 +36,7 @@
         vertical-align middle
         max-width img-width
         max-height img-width
-        //_width unquote('expression(this.offsetWidth < "160" ? "auto" : "160px");')
-        _height unquote('expression(this.offsetHeight < "160" ? "auto" : "160px");')
-        //_width auto
+        *height unquote('expression(this.offsetHeight < "160" ? "auto" : "160px");')
     h4
       padding 0 20px
       width 120px

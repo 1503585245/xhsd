@@ -3,6 +3,7 @@
  */
 define([],function(){
   var json = {
+    localhost : '测试站点',
     book : "选择分站",
     hangzhou : "杭州店",
     xiaoshan : "萧山店",

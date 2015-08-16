@@ -2,3 +2,223 @@
 @require "./common/header.styl"
 
 @require "./common/footer.styl"
+
+.breadcrumb
+  line-height 50px
+  height 50px
+  font-size 13px
+  text-indent 5px
+
+.similar-rank
+  width 210px
+  border-top 4px solid main-color
+  h3
+    width 208px
+    text-align center
+    font-size 15px
+    color a-color
+    text-shadow(0 0 1px a-color)
+    background-color back-color
+    border 1px solid border-color
+    border-top none
+    border-bottom none
+    height 38px
+    line-height 38px
+  ol
+    width 208px
+    background-color #FFF
+    border 1px solid border-color
+    border-top none
+    li
+      width 188px
+      height 100px
+      padding 0 10px
+      border-top 1px dashed border-color
+      .img-box
+        float left
+        padding 5px
+        width 90px
+        height 90px
+        overflow hidden
+        line-height 90px
+        text-align center
+        img
+          *margin-top unquote('expression((90 - this.height)/2);')
+          vertical-align middle
+          max-width 90px
+          max-height 90px
+          *height unquote('expression(this.offsetHeight < "90" ? "auto" : "90px");')
+      h4
+        height 60px
+        line-height 30px
+        overflow hidden
+      strong
+        color strong-color
+        line-height 30px
+.new-rec
+  margin-top 20px
+  width 210px
+  border-top 4px solid main-color
+  h3
+    width 208px
+    text-align center
+    font-size 15px
+    color a-color
+    text-shadow(0 0 1px a-color)
+    background-color back-color
+    border 1px solid border-color
+    border-top none
+    border-bottom none
+    height 38px
+    line-height 38px
+  ul
+    width 208px
+    padding-bottom 10px
+    border 1px solid border-color
+    border-top none
+    li
+      width 160px
+      height auto
+      padding 5px 24px
+      border-top 1px dashed border-color
+      .img-box
+        padding 5px 0
+        width 160px
+        height 160px
+        overflow hidden
+        line-height 90px
+        text-align center
+        img
+          *margin-top unquote('expression((160 - this.height)/2);')
+          vertical-align middle
+          max-width 160px
+          max-height 160px
+          *height unquote('expression(this.offsetHeight < "160" ? "auto" : "160px");')
+      h4
+        padding 0 20px
+        width 120px
+        height 40px
+        line-height 20px
+        overflow hidden
+      p
+        padding 0 20px
+      strong
+        font-size 13px
+        font-weight 700
+        color strong-color
+      em
+        float right
+        color a-lcolor
+        text-decoration line-through
+        font-style normal
+
+.right.main-right
+  width 980px
+.product-intro
+  width 980px
+  height 410px
+  .left
+    text-align center
+    .img-box
+      border 1px solid border-color
+      padding 5px
+      width 340px
+      height 340px
+      overflow hidden
+      line-height 340px
+      text-align center
+      img
+        *margin-top unquote('expression((340 - this.height)/2);')
+        vertical-align middle
+        max-width 340px
+        max-height 340px
+        *height unquote('expression(this.offsetHeight < "340" ? "auto" : "340px");')
+    a
+      display block
+      padding 10px
+  .right
+    width 580px
+    h2
+      height 45px
+      line-height 45px
+      font-size 18px
+      text-shadow(0 0 1px #000)
+    dd
+      font-size 14px
+      height 35px
+      line-height 35px
+      color a-lcolor
+    .first-info
+      padding 5px 0
+      border-bottom 1px solid border-color
+      dd
+        display inline-block
+        *display inline
+        *zoom 1
+        padding-right 20px
+        max-width 175px
+        *width unquote('expression(this.offsetWidth < "175" ? "auto" : "175px");')
+        overflow hidden
+        a
+          color main-color
+    .second-info
+      padding 20px 0
+      border-bottom 1px solid border-color
+      strong
+        font-size 18px
+        color strong-color
+        i
+          font-style normal
+          font-size 14px
+          font-weight normal
+      a
+        color a-lcolor
+        padding-left 40px
+        &:hover
+          color main-color
+      span
+        color main-color
+    .third-info
+      height 40px
+      line-height 40px
+      padding 30px 0
+      button,input
+        vertical-align middle
+    .fourth-info
+      padding-top 10px
+      height 40px
+      line-height 40px
+      dd
+        float left
+        margin-right 40px
+.main-info
+  padding-right 100px
+  dt
+    width 100%
+    height 35px
+    line-height 35px
+    border-bottom 3px solid main-color
+    h3
+      width 110px
+      height 35px
+      line-height 35px
+      text-align center
+      font-size 16px
+      color #FFF
+      background-color main-color
+      border-radius(5px 5px 0 0)
+      text-shadow(0 0 1px #FFF)
+  .first-info
+    dt
+      margin-bottom 10px
+    dd
+      height 30px
+      width 33.3%
+      float left
+      line-height 30px
+      text-indent 5px
+      color a-color
+      a
+        color main-color
+        &:hover
+          color main-color

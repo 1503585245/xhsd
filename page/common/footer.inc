@@ -1,3 +1,4 @@
+<div class="backtop"></div>
 <div id="footer">
   <div class="container">
     <div class="footer-pic">

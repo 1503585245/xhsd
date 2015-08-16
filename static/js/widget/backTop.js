@@ -5,7 +5,7 @@ define(['jquery','scrollTo'],function($,scrollto){
   function BackTop(el,opts){
     this.opt = {
       mode : 'move',
-      ops : $(window).height()-500,
+      ops : $(window).height(),
       speed : 800
     };
     this.$el = $(el);
@@ -16,7 +16,6 @@ define(['jquery','scrollTo'],function($,scrollto){
     });
 
     this._checkPosition();
-    console.log(this.$el);
     if(this.opt.mode == 'move'){
       this.$el.on('click', $.proxy(this._move,this));
     }else{
@@ -46,7 +45,8 @@ define(['jquery','scrollTo'],function($,scrollto){
     backtop : function(opts){
       this.each(function(){
         new BackTop(this,opts)
-      })
+      });
+      return this;
     }
   });
 

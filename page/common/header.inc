@@ -19,7 +19,7 @@
     <div class="container clearfix">
       <div class="left">
         <div class="logo left">
-          <a href="/" target="_blank"><img src="/static/img/logo.png" alt="" /></a>
+          <a href="/"><img src="/static/img/logo.png" alt="" /></a>
         </div>
         <div class="select-store left">
           <span href="" id="store">—°‘Ò∑÷’æ<i></i></span>
