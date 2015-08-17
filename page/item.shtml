@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="gb2312">
+  <meta name="description" content="<$sm$>在浙江新华书店网群网上书店销售，读者在浙江新华书店网群还可了解到《<$sm$>》作者、价格、内容介绍等信息。欢迎购买《<$sm$>》，浙江新华书店网群为您提供低价、快速的优质服务。">
+  <meta name="keyword" content="<$sm$>,<$cbsmc$>,<$zyz$>,新华书店,浙江新华,网上购物,网上商城,网上买书,购物中心,在线购物,图书,影视,音像,教育音像">
+  <title><$sm$>：<$zyz$> : <$ywdlmc$> :<$ywxlmc$> :<$yxxlmc$>:新华图书</title>
+  <link rel="stylesheet" href="/static/dist/css/item.css">
+</head>
+<body>
+<!--#include virtual="/page/common/header.inc"-->
+
+<div class="container clearfix">
+  <div class="breadcrumb">
+    您现在的位置：<a href="/class/class.shtml">全部分类</a><span> &gt; </span><a href="http://book.zxhsd.com/search/book_search.jsp?ywdl=<$ywdl$>"><$ywdlmc$></a><span> &gt; </span><a href="http://book.zxhsd.com/search/book_search.jsp?ywdl=<$ywxl$>"><$ywxlmc$></a><span> &gt; </span><a href="http://book.zxhsd.com/search/book_search.jsp?ywdl=<$yxxl$>"><$yxxlmc$></a>
+  </div>
+</div>
+<div class="container clearfix main">
+  <div class="left">
+    <div class="similar-rank">
+      <h3>同类商品排行</h3>
+      <ol>
+          <!--#include virtual="${showPath}common.inc"-->
+      </ol>
+    </div>
+    <div class="new-rec">
+      <h3>新书推荐</h3>
+      <ul>
+        <!--#include virtual="/page/item/xstj/item_xstj.inc"-->
+      </ul>
+    </div>
+  </div>
+  <div class="right main-right">
+    <div class="product-intro clearfix">
+      <div class="left">
+        <div class="img-box">
+          <img src="http://images.zxhsd.com/photo/book_b/<$fmdt$>" alt="<$sm$>" title="<$sm$>">
+        </div>
+        <a href="http://images.zxhsd.com/photo/book_b/<$fmdt$>" target="_blank">放大图片</a>
+      </div>
+      <div class="right">
+        <h2><$sm$></h2>
+        <dl class="first-info">
+          <dd>作者：<a href="/search/book_search.jsp?zz=<$zyz$>" title="<$zyz$>"><$zyz(16)$></a></dd>
+          <dd>出版社：<a href="/search/book_search.jsp?cbs=<$cbsmc$>"><$cbsmc$></a></dd>
+          <dd>ISBN：<$isbn$></dd>
+        </dl>
+        <dl class="second-info">
+          <dd>销价：<strong> ￥<$xsj$> <i>(<$zk$>折)</i></strong>（定价：￥<$dj$>）</dd>
+          <dd>配送：<span> 全场满58元免运费 </span><a href="">配送范围与时间</a></dd>
+        </dl>
+        <dl class="third-info">
+          <dd><span>购买数量：&nbsp;&nbsp;&nbsp;&nbsp;</span><button class="btn-num" id="min">-</button><input type="text" class="input-num" id="input-num" value="1"><button class="btn-num" id="add">+</button><span>&nbsp;&nbsp;&nbsp;&nbsp;库存：网群有货</span></dd>
+        </dl>
+        <dl class="fourth-info">
+          <dd><button type="button" class="btn btn-add">加入购物车</button></dd>
+          <dd><button type="button" class="btn-collect">立即收藏</button></dd>
+        </dl>
+      </div>
+    </div>
+    <div class="main-info">
+      <div class="sidebar">
+        <ul>
+          <li class="active"><a href="#item1">商品详情</a></li>
+          <gmPublish:getRows rows="0" language="velocity" sql="select replace(replace(BJTJ_CONTENT, '/r/n','<br>'),' ', '&nbsp;') bjtj from gw_kgsmbjtj where BJTJ_SPBS='&lt;$art_id$&gt;'">
+            #if(!($value.get("bjtj") == ""))
+            <li><a href="#item2">编辑推荐</a></li>
+            #end
+          </gmPublish:getRows>
+          <li><a href="#item3">内容提要</a></li>
+          <gmPublish:getRows rows="0" language="velocity" sql="select replace(replace(replace(sina_get_zzjj('<$art_id$>'),chr(10)||'    ','<br/>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;'), chr(10), ''), '  ', '&amp;nbsp;&amp;nbsp;') zzjj from dual">
+            #if(!($value.get("zzjj") == ""))
+            <li><a href="#item4">作者简介</a></li>
+            #end
+          </gmPublish:getRows>
+          <gmPublish:getRows rows="0" language="velocity" sql="select replace(replace(replace(f_get_SP('<$art_id$>'),chr(10)||'    ','<br/>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;'), chr(10), ''), '  ', '&amp;nbsp;&amp;nbsp;') sp from dual">
+            #if(!($value.get("sp") == ""))
+            <li><a href="#item5">媒体评论</a></li>
+            #end
+          </gmPublish:getRows>
+          <gmPublish:getRows rows="0" language="velocity" sql="select replace(replace(f_get_ml('<$art_id$>'),chr(10),'<br>'), '  ', '&amp;nbsp;&amp;nbsp;') ml from dual ">
+            #if(!($value.get("ml") == ""))
+            <li><a href="#item6">目录</a></li>
+            #end
+          </gmPublish:getRows>
+          <gmPublish:getRows rows="0" language="velocity" sql="select replace(replace(replace(f_get_jcy('<$art_id$>'),chr(10)||'    ','<br/>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;'), chr(10), ''), '  ', '&amp;nbsp;&amp;nbsp;') jcy from dual ">
+            #if(!($value.get("jcy") == ""))
+            <li><a href="#item7">精彩片段</a></li>
+            #end
+          </gmPublish:getRows>
+        </ul>
+      </div>
+      <dl class="first-info clearfix" id="item1">
+        <dt><h3>商品详情</h3></dt>
+        <dd>出版社：<a href="/search/book_search.jsp?cbs=<$cbsmc$>"><$cbsmc$></a></dd>
+        <dd>ISBN：<$isbn$></dd>
+        <dd>作者：<a href="/search/book_search.jsp?zz=<$zyz$>" title="<$zyz$>"><$zyz(16)$></a></dd>
+        <dd>页数：<$ys$></dd>
+        <dd>出版时间：<$ysny(YYYY-MM-DD)$></dd>
+        <dd>印刷时间：<$ysny(YYYY-MM-DD)$></dd>
+        <dd>包装：<$zz$></dd>
+        <dd>开本：<$KB$></dd>
+        <dd>版次：<$bc$></dd>
+      </dl>
+      <gmPublish:getRows  rows="0" language="velocity" sql="select replace(replace(BJTJ_CONTENT, '/r/n','<br>'),' ', '&nbsp;') bjtj from gw_kgsmbjtj where BJTJ_SPBS='&lt;$art_id$&gt;'">
+        #if(!($value.get("bjtj") == ""))
+        <dl class="second-info" id="item2">
+          <dt><h3>编辑推荐</h3></dt>
+          <dd>
+            <p>$value.get("bjtj")</p>
+          </dd>
+        </dl>
+        #end
+      </gmPublish:getRows>
+      <gmPublish:getRows  rows="0" language="velocity" sql="select replace(replace(replace(f_get_nrty('<$art_id$>'),chr(10)||'    ','<br/>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;'), chr(10), ''), '  ', '&amp;nbsp;&amp;nbsp;') nrty from dual ">
+        <dl class="third-info" id="item3">
+          <dt><h3>内容提要</h3></dt>
+          <dd>
+            <p>$value.get("nrty")</p>
+          </dd>
+        </dl>
+      </gmPublish:getRows>
+      <gmPublish:getRows  rows="0" language="velocity" sql="select replace(replace(replace(sina_get_zzjj('<$art_id$>'),chr(10)||'    ','<br/>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;'), chr(10), ''), '  ', '&amp;nbsp;&amp;nbsp;') zzjj from dual">
+        #if(!($value.get("zzjj") == ""))
+        <dl class="fourth-info" id="item4">
+          <dt><h3>作者简介</h3></dt>
+          <dd>
+            <p>$value.get("zzjj") </p>
+          </dd>
+          <dd class="more">查看全部&gt;&gt;</dd>
+        </dl>
+        #end
+      </gmPublish:getRows>
+      <gmPublish:getRows  rows="0" language="velocity"  sql="select replace(replace(replace(f_get_SP('<$art_id$>'),chr(10)||'    ','<br/>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;'), chr(10), ''), '  ', '&amp;nbsp;&amp;nbsp;') sp from dual">
+        #if(!($value.get("sp") == ""))
+        <dl class="fifth-info" id="item5">
+          <dt><h3>媒体评论</h3></dt>
+          <dd>
+            <p>$value.get("sp")</p>
+          </dd>
+          <dd class="more">查看全部&gt;&gt;</dd>
+        </dl>
+        #end
+      </gmPublish:getRows>
+      <gmPublish:getRows rows="0" language="velocity" sql="select replace(replace(f_get_ml('<$art_id$>'),chr(10),'<br>'), '  ', '&amp;nbsp;&amp;nbsp;') ml from dual ">
+        #if(!($value.get("ml") == ""))
+        <dl class="sixth-info" id="item6">
+          <dt><h3>目录</h3></dt>
+          <dd>
+            <p>$value.get("ml")</p>
+          </dd>
+          <dd class="more">查看全部&gt;&gt;</dd>
+        </dl>
+        #end
+      </gmPublish:getRows>
+      <gmPublish:getRows rows="0" language="velocity" sql="select replace(replace(replace(f_get_jcy('<$art_id$>'),chr(10)||'    ','<br/>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;'), chr(10), ''), '  ', '&amp;nbsp;&amp;nbsp;') jcy from dual ">
+        #if(!($value.get("jcy") == ""))
+        <dl class="seventh-info" id="item7">
+          <dt><h3>精彩页或试读片段</h3></dt>
+          <dd>
+            <p>$value.get("jcy")</p>
+          </dd>
+          <dd class="more">查看全部&gt;&gt;</dd>
+        </dl>
+        #end
+      </gmPublish:getRows>
+    </div>
+  </div>
+</div>
+
+
+<!--#include virtual="/page/common/footer.inc"-->
+
+<script data-main="/static/dist/js/item.js" src="/static/js/require.js"></script>
+</body>
+</html>

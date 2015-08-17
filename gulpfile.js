@@ -44,7 +44,8 @@ gulp.task('item',function(){
       getUrl : './core/getUrl',
       scrollTo : './widget/scrollTo',
       backTop : './widget/backTop',
-      common : './core/common'
+      common : './core/common',
+      sidebar : './core/sidebar'
     },
     include : [
       './page/item.js'

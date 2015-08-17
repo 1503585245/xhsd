@@ -53,14 +53,14 @@ define(['jquery','checkLogin','getJsonName','backTop'],function($,checkLogin,get
         handle : function(data){
           if(data.status == 1){
             $('.top-bar').find('.left').html(
-              '<span>ÄúºÃ£¡'+data.username+'£¬»¶Ó­¹âÁÙ£¡ </span>'
+              '<span>æ‚¨å¥½ï¼'+data.username+'ï¼Œæ¬¢è¿å…‰ä¸´ï¼ </span>'
             );
           }else{
             $('.top-bar').find('.left').html(
-              '<span>ÄúºÃ£¡»¶Ó­¹âÁÙ£¡ </span>'+
-              '<a href="http://www.zxhsd.com/Club/login.jsp">µÇÂ¼</a>'+
+              '<span>æ‚¨å¥½ï¼æ¬¢è¿å…‰ä¸´ï¼ </span>'+
+              '<a href="http://www.zxhsd.com/Club/login.jsp">ç™»å½•</a>'+
               '<span> | </span>'+
-              '<a href="http://www.zxhsd.com/Club/register_first.jsp">×¢²á</a>'
+              '<a href="http://www.zxhsd.com/Club/register_first.jsp">æ³¨å†Œ</a>'
             );
           }
         }

@@ -8,7 +8,8 @@
   height 50px
   font-size 13px
   text-indent 5px
-
+  width 100%
+  float left
 .similar-rank
   width 210px
   border-top 4px solid main-color
@@ -136,13 +137,17 @@
     a
       display block
       padding 10px
+      font-size 14px
   .right
     width 580px
     h2
-      height 45px
+      width 100%
+      max-height 45px
+      *height unquote('expression(this.offsetHeight < "45" ? "auto" : "45px");')
+      overflow hidden
       line-height 45px
       font-size 18px
-      text-shadow(0 0 1px #000)
+      font-weight bold
     dd
       font-size 14px
       height 35px
@@ -192,7 +197,11 @@
         float left
         margin-right 40px
 .main-info
+  position relative
+  z-index 100
   padding-right 100px
+  dl
+    margin-bottom 10px
   dt
     width 100%
     height 35px
@@ -209,8 +218,6 @@
       border-radius(5px 5px 0 0)
       text-shadow(0 0 1px #FFF)
   .first-info
-    dt
-      margin-bottom 10px
     dd
       height 30px
       width 33.3%
@@ -222,3 +229,52 @@
         color main-color
         &:hover
           color main-color
+  .second-info,.third-info,.fourth-info,.fifth-info,.sixth-info,.seventh-info
+    dd
+      padding 10px
+      line-height 25px
+      font-size 14px
+  .fourth-info,.fifth-info,.sixth-info,.seventh-info
+    dd
+      max-height 315px
+      *height unquote('expression(this.offsetHeight < "315" ? "auto" : "315px");')
+      overflow hidden
+      &.active
+        max-height 10000px
+        *height auto
+    dd.more
+      color main-color
+      cursor pointer
+  .seventh-info
+    h3
+      width 150px
+  .sidebar
+    background-color #ffffff
+    z-index 100
+    position fixed
+    _position absolute
+    display none
+    top 80px
+    width 75px
+    margin-bottom -3px
+    li
+      text-align center
+      line-height 45px
+      height 45px
+      margin-bottom 3px
+      border 1px solid border-color
+      background-color back-color
+      a
+        display block
+        width 75px
+        height 45px
+        &:hover
+          color a-color
+          text-decoration none
+      &.active
+        border 1px solid main-color
+        background-color main-color
+        a
+          color #FFF
+          &:hover
+            color #FFF
